@@ -1,10 +1,12 @@
 import sys
 import random
 
-print("Welcome to the Psych Sidekick Name Generator")
-print("A name that Shawn would give Gus:'\n'")
+
 
 def main():
+  print("Welcome to the Psych Sidekick Name Generator")
+  print("A name just like Sean would pick for Gus:\n\n'")
+  
   first = ('SuperSmeller','Francois','Peter Panic','Felicia','Gus','Ovaltine','Shmuel','Magic','Don','Galileo','The','Schoonie','Lavender','Hummingbird','Scrooge','Sterling','Dr.','Step','Trapezious','Jazz','Doughnut','Clemintine','The Vault Of','Ghee','Pennywhistle', 'Pitchfork Ben', 'Potato Bug','Pushmeet','Rock Candy', 'Schlomo', 'Scratchensniff', 'Scut',
 "Sid 'The Squirts'", 'Skidmark', 'Slaps', 'Snakes', 'Snoobs',
 'Snorki', 'Soupcan Sam', 'Spitzitout', 'Squids', 'Stinky',
@@ -19,17 +21,19 @@ def main():
 'Woolysocks')
 
   while True:
-    first = random.choice(first)
-    last = random.choice(last)
+    first_name = random.choice(first)
+    last_name = random.choice(last)
 
     print("\n\n")
-    print("{}{}".format(first,last), file=sys.stderr)
+    print("{} {}".format(first_name, last_name), file=sys.stderr)
     print("\n\n")
 
-  tryAgain = input("\n Try Again? press Enter else n to quit\n")
-  if tryAgain.lower == 'n':
-    break
-  input("\n Press Enter to Exit.")
-if __name__=='__main__':
+    try_again = input("\n\nTry again? (Press Enter else n to quit)\n ")
+
+    if try_again.lower() == "n":
+      break
+
+    input("\nPress Enter to exit.")
+
+if __name__ == "__main__":
     main()
-  
