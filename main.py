@@ -1,7 +1,7 @@
+"""Generate sidekick names based from the Psych tv show"""
+
 import sys
 import random
-
-
 
 def main():
   print("Welcome to the Psych Sidekick Name Generator")
